@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Loot from './Loot';
 import Wallet from './Wallet';
 
-class App extends Component {
-    render() {
-        return (
+const App = () => {
+    return (
+        <div>
+            Loot Check
+            <hr/>
+            <Wallet />
+            <hr/>
+            <Loot />
             <div>
-                Loot Check
-                <hr/>
-                <Wallet />
+                Powered by <a target={'_blank'} href={'https://www.coindesk.com/price'}>Coindesk</a>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default App;
